@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Kontakt oss</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class = "logo"href="/">Mikael<span>Fansene</span></a>
+
+            <img id="mobile-cta3" class="mobile-menu" src="assets/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit3" class="mobile-menu" src="assets/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="/">Hjem</a></li>
+                    <li><a href="/om_oss.html">Om oss</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li class="go-premium-cta"><a href="/kontakt_oss.html">Kontakt oss</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="contact">
+        <h1>Kontakt oss</h1>
+        <ul class="contact-info">
+            <li>
+                <img src="/assets/phone-call-svgrepo-com.svg" alt="">
+                +47 938 57 321
+            </li>
+            <li>
+                <img src="/assets/3699494.png" alt="">
+                <a href="mailto:marcus@norge.no">marcus@norge.no</a>
+            </li>
+            <li>
+                <img src="/assets/mail-5888.svg" alt="">
+                Solvegen 7, 7370 Trondheim
+            </li>
+        </ul>
+    </div>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta3')
+            nav = document.querySelector('nav')
+                mobileBtnExit = document.getElementById('mobile-exit3');
+        
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
+</html>
