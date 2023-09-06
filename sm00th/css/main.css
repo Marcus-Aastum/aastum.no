@@ -1,0 +1,642 @@
+/* Font in use is "Marydale Regular" from Abobe Fonts */
+
+@import url("https://p.typekit.net/p.css?s=1&k=cup2ngo&ht=tk&f=27034&a=123119320&app=typekit&e=css");
+
+@font-face {
+font-family:"marydale";
+src:url("https://use.typekit.net/af/3a9361/00000000000000007735b54c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/3a9361/00000000000000007735b54c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/3a9361/00000000000000007735b54c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+.tk-marydale { font-family: "marydale",sans-serif; }
+
+
+/*CSS for both index.html and common elements like navbar and footer*/
+
+
+/*Defines font for entire site, and removes default margin*/
+body{
+    font-family: marydale, sans-serif;
+    font-weight: 400; 
+    font-style: normal;
+    margin: 0;
+}
+
+/*Start of navbar*/
+.nav{
+    background-color: #FAA155;
+    border-bottom: 4px dashed white;
+    position: fixed; 
+    width: 100%;
+    z-index: 2;
+    top: 0px;
+}
+ul{
+    text-decoration: none;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+li{
+    display: inline;
+    margin: 0;
+}
+/*Defining the social media links to the right of the navbar*/
+#social img{
+    width: 90px;
+    float: right;
+    margin-right: 50px;
+    margin-top: .5em;
+}
+#social p{
+    display: inline;
+}
+/*Defining the size of the logo as well as rotating it 25 degrees for a nicer apperance*/
+#logo{
+    margin-left: 20px;
+    transform: rotate(25deg);
+    width: 45px;
+}
+.nav .nav-link{
+    font-size: 47px;
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+    vertical-align: top;
+    position: relative;
+    top: 10px;
+}
+/*End of navbar*/
+
+/*Start of main landing page*/
+.title-page{
+    /*Defining background image and size of page*/
+    background-image: url(https://live.staticflickr.com/1955/43801029780_891613a51e_b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+
+/*Defining attribution link on bottom of picture*/
+.title-page a{
+    vertical-align: bottom;
+    padding-bottom: 0;
+    float: right;
+    margin-right: 20px;
+    color: black;
+    position: relative;
+    bottom: -120px;
+}
+
+/*Defining title*/
+#title{
+    width: 60%;
+    color: #FAA155;
+    background-color: rgba(0, 0, 0, 0.74);
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    font-size: 45px;
+    border-radius: 75px;
+}
+/*End of main landing page*/
+
+/*Start of product page*/
+.product-page{
+    background-color: #FA559C;
+    width: 100%;
+    height: 540px /*Fixed units are used, which isn't ideal for resizing*/
+}
+
+/*Defining common attributes for all products*/
+.products{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: inline;
+    text-align: center;
+    z-index: 1;
+}
+h2{
+    display: inline;
+    font-size: 2em;
+}
+
+/*Each product is seperate for position purposes*/
+/*Position absolute is used, making resizing hard*/
+#product-1{
+    position: absolute;
+    left: 10%;
+    width: 20%;
+}
+
+/*Product 2 is different as it is centered*/
+#product-2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: inherit, auto, inherit, auto;
+    z-index: 0; /*Is forced to the bottom as it takes up 100% width*/
+}
+#product-2 p{
+    font-size: .9em;
+}
+#product-3{
+    position: absolute;
+    right: 10%;
+    width: 20%;
+}
+#product-3 p {
+    font-size: .85em;
+}
+
+/*Defining attributes of div where the text is located*/
+.product-info{
+    background-color: #FAA155;
+    width: 250px;
+    margin: auto;
+    border-radius: 45px;
+    height: 380px;
+    font-family: sans-serif;
+}
+
+/*Defining image width to be 100% of div width*/
+.product-info img{
+    width: 100%;
+}
+.product-info p {
+    position: absolute;
+    top: 290px;
+    left: 0;
+    right: 0;
+    width: 65%;
+    margin: auto;
+    color: white;
+}
+
+/*Paragraph of the central product has to be defined on its own because of the way it's centered*/
+#stupid-little-p{
+    width: 15%;
+}
+/*Defining button size*/
+.product-page button, .product-page a{
+    border: none;
+    border-radius: 40px;
+    font-size: 1.3em;
+    font-family: marydale, sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 0, 8px;
+    margin-top: 10px;
+}
+/*Defining button actions*/
+/*Each button has multiple definitions because of multiple elements and hover states*/
+#read{
+    background-color: #9891FF;
+}
+#read:hover{
+    background-color: #c8c4ff;
+}
+#read a{
+    color: white;
+    text-decoration: none;
+}
+#read a:hover{
+    color: black;
+}
+#buy{
+    background-color: #4BDE72;
+}
+#buy:hover{
+    background-color: #a8ffbf;
+}
+#buy a{
+    color: white;
+    text-decoration: none;
+}
+#buy a:hover{
+    color: black;
+}
+/*End of product page*/
+
+/*Start of footer*/
+.footer{
+    background-color: #9891FF;
+    height: 300px;
+}
+.footer a{
+    color: white;
+    font-size: 2em;
+}
+#left-footer{
+    float: left;
+    width: 500px;
+    margin-left: 30px;
+    margin-top: 60px;
+    text-align: center;
+}
+#right-footer{
+    float: right;
+    width: 500px;
+    margin-right: 30px;
+    margin-top: 60px;
+    text-align: center;
+}
+/*End of footer*/
+
+
+
+/*CSS for morgensmoothie.html*/
+
+
+
+/*Position absolute used heavily, not ideal*/
+/*Defining background of page*/
+.morgen .morgensmoothie{
+    margin-top: 100px;
+    background-image: linear-gradient(to right, #FFE500, #00FFFF);
+    padding-bottom: 5%;
+}
+
+/*Defining image size*/
+.morgen .morgensmoothie img{
+    width: 350px;
+    border-radius: 450px;
+    margin: 40px;
+}
+
+/*Defining title position, apperance and size*/
+.morgen .morgensmoothie h1{
+    position: absolute;
+    left: 55%;
+    top: 15%;
+    color: white;
+    font-size: 3.5em;
+    margin-top: 0px;
+}
+.morgen .morgensmoothie p{
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+/*Defining title of information-boxes*/
+.morgen h3{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: -3%;
+    margin-top: 0%;
+}
+
+/*Defining both boxes*/
+.morgen .about{
+    position: absolute;
+    left: 41%;
+    top: 32%;
+    background-color: white;
+    width: 20%;
+    padding: 0px 2%;
+    border-radius: 40px;
+}
+.morgen .nutrition{
+    position: absolute;
+    right: 5%;
+    top: 32%;
+    background-color: white;
+    width: 20%;
+    padding: 0px 2%;
+    border-radius: 40px;
+}
+
+/*Start of nutrition table*/
+.morgen .nutrition-table{
+    position: absolute;
+    right: 5%;
+    top: 70%;
+    background-color: white;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 40px;
+}
+.morgen td{
+    margin: 0px;
+    padding: 5px 50px 5px 10px;
+    border-right: 2px solid black;
+    font-family: sans-serif;
+}
+/*Indenting subelements*/
+.morgen #indent{
+    text-align: right;
+    padding-right: 10px;
+}
+
+/*End of nutrition table*/
+
+/*Start of button*/
+.morgen #buy-button{
+    border: 3px dashed #FF00C4;
+    border-radius: 40px;
+    font-size: 1.6em;
+    font-family: marydale, sans-serif;
+    padding: 0px 50px;
+    margin-top: 10px;
+    position: absolute;
+    left: 7%;
+    top: 93%;
+}
+.morgen #buy-button span{
+    text-decoration: none;
+    font-size: 1.6em;
+    color: black;
+}
+.morgen #buy-button a{
+    text-decoration: none;
+}
+.morgen #buy-button:hover{
+    background-color: #00FF08;
+}
+.morgen #buy-button:hover span{
+    display: none;
+}
+/*Changes button text when hovering*/
+.morgen #buy-button:hover:before{
+    content: "XX Kr";
+    font-size: 1.6em;
+}
+/*End of button*/
+
+
+
+/*CSS  for fokussmoothie.html - same code as morgensmoothie but with new colors
+refer to previous comments*/
+
+
+
+.fokus .fokussmoothie{
+    margin-top: 100px;
+    background-image: linear-gradient(to right, #003FBC, #7200B4);
+    padding-bottom: 5%;
+}
+.fokus .fokussmoothie img{
+    width: 370px;
+    border-radius: 450px;
+    margin: 40px;
+}
+.fokus .fokussmoothie h1{
+    position: absolute;
+    left: 55%;
+    top: 15%;
+    color: white;
+    font-size: 3.5em;
+    margin-top: 0px;
+}
+.fokus .fokussmoothie p{
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+.fokus h3{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: -3%;
+    margin-top: 0%;
+}
+.fokus .about{
+    position: absolute;
+    left: 41%;
+    top: 32%;
+    background-color: white;
+    width: 20%;
+    padding: 0px 2%;
+    border-radius: 40px;
+}
+.fokus .nutrition{
+    position: absolute;
+    right: 5%;
+    top: 32%;
+    background-color: white;
+    width: 20%;
+    padding: 0px 2%;
+    border-radius: 40px;
+}
+.fokus .nutrition-table{
+    position: absolute;
+    right: 5%;
+    top: 70%;
+    background-color: white;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 40px;
+}
+.fokus td{
+    margin: 0px;
+    padding: 5px 50px 5px 10px;
+    border-right: 2px solid black;
+    font-family: Arial, sans-serif;
+}
+.fokus #indent{
+    text-align: right;
+    padding-right: 10px;
+}
+.fokus #buy-button{
+    border: 3px dashed #FF00C4;
+    border-radius: 40px;
+    font-size: 1.6em;
+    font-family: marydale, sans-serif;
+    padding: 0px 50px;
+    margin-top: 10px;
+    position: absolute;
+    left: 7%;
+    top: 90%;
+}
+.fokus #buy-button span{
+    text-decoration: none;
+    font-size: 1.6em;
+    color: black;
+}
+.fokus #buy-button a{
+    text-decoration: none;
+}
+.fokus #buy-button:hover{
+    background-color: #00FF08;
+}
+.fokus #buy-button:hover span{
+    display: none;
+}
+.fokus #buy-button:hover:before{
+    content: "XX Kr";
+    font-size: 1.6em;
+}
+
+
+
+/*CSS for relax-smoothie.html - same code as morgensmoothie but with new colors
+refer to previous comments*/
+
+
+
+.relax- .relax-smoothie{
+    margin-top: 100px;
+    background-image: linear-gradient(to right, #FF0000, #8F0000);
+    padding-bottom: 5%;
+}
+.relax- .relax-smoothie img{
+    width: 370px;
+    border-radius: 450px;
+    margin: 40px;
+}
+.relax- .relax-smoothie h1{
+    position: absolute;
+    left: 55%;
+    top: 15%;
+    color: white;
+    font-size: 3.5em;
+    margin-top: 0px;
+}
+.relax- .relax-smoothie p{
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+.relax- h3{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: -3%;
+    margin-top: 0%;
+}
+.relax- .about{
+    position: absolute;
+    left: 41%;
+    top: 32%;
+    background-color: white;
+    width: 20%;
+    padding: 0px 2%;
+    border-radius: 40px;
+}
+.relax- .nutrition{
+    position: absolute;
+    right: 5%;
+    top: 32%;
+    background-color: white;
+    width: 20%;
+    padding: 0px 2%;
+    border-radius: 40px;
+}
+.relax- .nutrition-table{
+    position: absolute;
+    right: 5%;
+    top: 70%;
+    background-color: white;
+    width: fit-content;
+    padding: 1%;
+    border-radius: 40px;
+}
+.relax- td{
+    margin: 0px;
+    padding: 5px 50px 5px 10px;
+    border-right: 2px solid black;
+    font-family: Arial, sans-serif;
+}
+.relax- #indent{
+    text-align: right;
+    padding-right: 10px;
+}
+.relax- #buy-button{
+    border: 3px dashed #FF00C4;
+    border-radius: 40px;
+    font-size: 1.6em;
+    font-family: marydale, sans-serif;
+    padding: 0px 50px;
+    margin-top: 10px;
+    position: absolute;
+    left: 7%;
+    top: 90%;
+}
+.relax- #buy-button span{
+    text-decoration: none;
+    font-size: 1.6em;
+    color: black;
+}
+.relax- #buy-button a{
+    text-decoration: none;
+}
+.relax- #buy-button:hover{
+    background-color: #00FF08;
+}
+.relax- #buy-button:hover span{
+    display: none;
+}
+.relax- #buy-button:hover:before{
+    content: "XX Kr";
+    font-size: 1.6em;
+}
+
+
+/*CSS for maalet.html*/
+
+
+.maal{
+    background-color: #FA559C;
+}
+
+/*Defining size of information*/
+.maal .info{
+    padding-top: 150px;
+    padding-bottom: 200px;
+    color: white;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+.maal .info h1{
+    font-size: 3.5em;
+}
+.maal .info p{
+    font-size: 1.5em;
+    font-family: Arial, sans-serif;
+}
+
+
+/*CSS for baerekraft.html*/
+
+
+/*Position absolute not used as heavily, but still nor friendly to resizing*/
+.baerekraft{
+    background-color: #FA559C;
+    height: fit-content;
+}
+.baerekraft .info{
+    padding-top: 100px;
+    height: 550px;
+    color: white;
+    text-align: center;
+}
+.baerekraft .info h1{
+    font-size: 3.5em;
+}
+
+/*Defining size and position of information*/
+.baerekraft .info p{
+    font-size: 1.6em;
+    font-family: Arial, sans-serif;
+    float: right;
+    width: 40%;
+    margin-right: 10%;
+}
+
+/*Defining size and position of image*/
+.baerekraft #gard{
+    width: 35%;
+    float: left;
+    display: inline;
+    margin-left: 10%;
+    border-radius: 30px;
+    border: 5px solid white;
+}
+
+/*Defining attribution text for image*/
+.baerekraft #david{
+    position: absolute; /*Position absolute used*/
+    bottom: 16%;
+    left: 10%;
+    color: white;
+}
