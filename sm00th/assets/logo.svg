@@ -1,0 +1,10 @@
+<svg id="Component_1_1" data-name="Component 1 – 1" xmlns="http://www.w3.org/2000/svg" width="125" height="266.535" viewBox="0 0 125 266.535">
+  <rect id="Rectangle_3" data-name="Rectangle 3" width="11.115" height="127.847" transform="matrix(0.974, 0.225, -0.225, 0.974, 75.17, 0)" fill="#fa559c"/>
+  <rect id="Rectangle_1" data-name="Rectangle 1" width="91" height="203" rx="19" transform="translate(17 63.535)" fill="#007b2e"/>
+  <text id="smO" transform="translate(21 156.535)" fill="#ffaefc" font-size="35" font-family="LucidaHandwriting-Italic, Lucida Handwriting" font-style="italic"><tspan x="0" y="0">smO</tspan></text>
+  <text id="Oth" transform="translate(23 193.535)" fill="#ffaefc" font-size="35" font-family="LucidaHandwriting-Italic, Lucida Handwriting" font-style="italic"><tspan x="0" y="0">Oth</tspan></text>
+  <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(0 63.535)" fill="#fff" stroke="#707070" stroke-width="1">
+    <rect width="125" height="18" stroke="none"/>
+    <rect x="0.5" y="0.5" width="124" height="17" fill="none"/>
+  </g>
+</svg>
