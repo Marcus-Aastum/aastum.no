@@ -1,0 +1,52 @@
+*{
+    font-family: Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 0;
+}
+#navbar{
+    border-bottom: 2px solid rgb(104, 104, 104);
+    overflow: hidden;
+    background-color: #7292eb;
+}
+#navbarUl{
+    list-style-type: none;
+    margin: 0;
+    margin-left: -2em;
+}
+li{
+    display: inline;
+    padding: 1em 1em 1em 1em;
+    font-weight: 500;
+    float: left;
+}
+li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    color: white;
+    transition: .5s;
+}
+#lang{
+    right: 2em;
+    float: right;
+    text-align: right;
+}
+
+#profilePic{
+    max-width: 30em;
+    width: 90vw;
+    border-radius: 25px;
+}
+#contactCard{
+    background-color: #C4F2DA;
+    padding: 3rem;
+    margin: 0.5rem 1rem;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+
+
